@@ -30,8 +30,8 @@ const GitHubSection = () => {
               </p>
             </div>
             <Button asChild variant="hero" size="lg">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                <Github className="mr-2 h-4 w-4" /> Visit GitHub
+              <a href="https://pub.dev/packages/flutter_text_detect_area" target="_blank" rel="noopener noreferrer">
+                <Package className="mr-2 h-4 w-4" /> Flutter Package on pub.dev
               </a>
             </Button>
           </div>

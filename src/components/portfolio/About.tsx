@@ -14,15 +14,17 @@ const About = () => {
         <div className="grid md:grid-cols-5 gap-8 items-start">
           <div className="md:col-span-3 space-y-5 text-muted-foreground leading-relaxed text-base md:text-lg">
             <p>
-              I'm a Senior Software Engineer from Gujarat, India with{" "}
-              <span className="text-foreground font-semibold">5+ years</span> of hands-on experience
-              shipping mobile products across Android, Flutter, and Kotlin Multiplatform.
+              I'm a Senior Mobile Engineer from <span className="text-foreground">Surat, Gujarat</span> with{" "}
+              <span className="text-foreground font-semibold">5+ years</span> shipping production mobile products
+              across Android, Flutter, and Kotlin Multiplatform — currently at{" "}
+              <span className="text-foreground">Techvoot Solutions</span>.
             </p>
             <p>
-              I've designed and delivered applications in{" "}
-              <span className="text-foreground">transportation, education, ecommerce, media,
-              OCR, enterprise productivity</span>, and AI-assisted solutions — collaborating with
-              international clients and product teams to ship reliable, scalable software.
+              I've delivered <span className="text-foreground">16+ apps</span> for international clients across{" "}
+              <span className="text-foreground">transportation, education, ecommerce, fintech (PayPal & multi-currency),
+              media, OCR, NFC identity, AR beauty, and enterprise productivity</span> — including KMP work
+              on Monportail & Elna, and the open-source{" "}
+              <span className="text-foreground">Flutter Text Detect Area</span> OCR package on pub.dev.
             </p>
             <p>
               Today, I'm channeling that engineering foundation into{" "}

@@ -3,25 +3,31 @@ import { Briefcase } from "lucide-react";
 const roles = [
   {
     company: "Techvoot Solutions",
-    role: "Android • Flutter • KMP Developer",
+    location: "Ahmedabad, India",
+    role: "Android • Flutter • Kotlin Multiplatform Developer",
     period: "Dec 2021 — Present",
     points: [
-      "Lead mobile development across Flutter, native Android, and Kotlin Multiplatform projects.",
-      "Delivered international client products in OCR, NFC identity, ecommerce & media.",
-      "Authored a published Flutter package and contributed to KMP architecture.",
+      "Lead mobile delivery across Flutter, native Android & KMP for international clients (Quebec, US, EU).",
+      "Shipped 14+ products: Elog, Edition Nordiques, Neobox, SnapShop, CIAS, Equa, NFS, getBeauty, AgenceRBL, JustRead, Fugues, AdReel, Bindaz, Ronna Momentum/Connexia.",
+      "Authored & published the Flutter Text Detect Area OCR package on pub.dev.",
+      "KMP work on Monportail (NFC identity) and Elna with shared Compose resources & Mirego/Trikot stack.",
+      "Integrated PayPal multi-currency, BytePlusEffect AR SDK, Riverpod refactors, and Play Console 16KB / Edge-to-Edge SDK 35 modernization.",
     ],
   },
   {
     company: "Tech Integrity Services",
+    location: "Rajkot, India",
     role: "Android Developer",
     period: "Aug 2020 — Aug 2021",
     points: [
-      "Built and maintained Android apps across multiple verticals.",
-      "Implemented REST integrations, Firebase auth, and offline-first flows.",
+      "Built and maintained native Android apps across multiple verticals.",
+      "Strengthened coding standards, REST integrations, Firebase auth and offline-first flows.",
+      "Delivered features end-to-end with strong problem-solving and clean architecture.",
     ],
   },
   {
     company: "Smart Online Academy",
+    location: "Remote",
     role: "Android Developer Intern",
     period: "Mar 2020 — Jul 2020",
     points: [
@@ -60,7 +66,8 @@ const Experience = () => {
                       <span>{r.period}</span>
                     </div>
                     <h3 className="text-lg font-semibold">{r.company}</h3>
-                    <p className="text-sm text-muted-foreground mb-3">{r.role}</p>
+                    <p className="text-sm text-muted-foreground">{r.role}</p>
+                    <p className="text-xs text-muted-foreground/80 mb-3">{r.location}</p>
                     <ul className="space-y-1.5 text-sm text-foreground/80 list-disc list-inside md:list-outside">
                       {r.points.map((p) => (
                         <li key={p}>{p}</li>
