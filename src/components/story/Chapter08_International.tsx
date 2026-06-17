@@ -78,7 +78,7 @@ const Chapter08_International = () => {
           <div className="space-y-3">
             {[
               { icon: Slack, label: "Async-first communication" },
-              { icon: Workflow, label: "Asana · Jira · Agile delivery" },
+              { icon: Workflow, label: "Asana · Agile delivery" },
               { icon: Globe2, label: "Clients in Quebec, US, EU" },
             ].map(({ icon: Icon, label }) => (
               <div key={label} className="flex items-center gap-3 glass px-4 py-3 rounded-xl">
