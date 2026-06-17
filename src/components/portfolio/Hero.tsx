@@ -6,7 +6,7 @@ const stats = [
   { value: "5+", label: "Years Experience" },
   { value: "15+", label: "Production Apps" },
   { value: "1", label: "Flutter Package" },
-  { value: "KMP", label: "Developer" },
+  { value: "App", label: "Developer" },
 ];
 
 const Hero = () => {
