@@ -55,10 +55,11 @@ const Chapter02_Lockdown = () => {
         </div>
 
         <div className="md:col-span-2 space-y-4 text-lg text-foreground/85 font-light">
-          <p>COVID lockdown. College final year.</p>
-          <p className="text-muted-foreground">No roadmap. No mentor.</p>
+          <p>College placement — secured. But the company had no Android track.</p>
+          <p className="text-muted-foreground">The craft I wanted was still out of reach.</p>
+          <p>Then the world stopped. COVID. Final year. Empty calendar.</p>
           <p className="text-primary">YouTube tutorials. Stack Overflow nights. Relentless experimentation.</p>
-          <p>This is where Android development became a craft.</p>
+          <p>This is where Android stopped being a subject and became a craft.</p>
         </div>
       </div>
     </ChapterShell>
