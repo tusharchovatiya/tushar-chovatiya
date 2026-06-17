@@ -14,10 +14,10 @@ const About = () => {
         <div className="grid md:grid-cols-5 gap-8 items-start">
           <div className="md:col-span-3 space-y-5 text-muted-foreground leading-relaxed text-base md:text-lg">
             <p>
-              I'm a Senior Mobile Engineer from <span className="text-foreground">Surat, Gujarat</span> with{" "}
+              I'm a Senior Mobile Engineer from{" "}
+              <span className="text-foreground">Bhalgam, Bilkha, Gujarat</span> with{" "}
               <span className="text-foreground font-semibold">5+ years</span> shipping production mobile products
-              across Android, Flutter, and Kotlin Multiplatform — currently at{" "}
-              <span className="text-foreground">Techvoot Solutions</span>.
+              across Android, Flutter, Flutter Flow and Kotlin Multiplatform
             </p>
             <p>
               I've delivered <span className="text-foreground">16+ apps</span> for international clients across{" "}

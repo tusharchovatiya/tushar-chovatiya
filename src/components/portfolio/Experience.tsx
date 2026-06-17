@@ -5,7 +5,7 @@ const roles = [
     company: "Techvoot Solutions",
     location: "Ahmedabad, India",
     role: "Android • Flutter • Kotlin Multiplatform Developer",
-    period: "Dec 2021 — Present",
+    period: "Dec 2021 — Dec 2025",
     points: [
       "Lead mobile delivery across Flutter, native Android & KMP for international clients (Quebec, US, EU).",
       "Shipped 14+ products: Elog, Edition Nordiques, Neobox, SnapShop, CIAS, Equa, NFS, getBeauty, AgenceRBL, JustRead, Fugues, AdReel, Bindaz, Ronna Momentum/Connexia.",
