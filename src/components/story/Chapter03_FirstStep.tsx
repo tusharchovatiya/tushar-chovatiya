@@ -1,12 +1,12 @@
 import ChapterShell from "./ChapterShell";
 import { motion } from "framer-motion";
-import { Footprints, Code2, Briefcase, Rocket } from "lucide-react";
+import { Youtube, Mail, Wrench, Rocket } from "lucide-react";
 
 const steps = [
-  { icon: Footprints, label: "Internship offered", note: "Remote · Web to Android" },
-  { icon: Code2, label: "Shipped first real app", note: "Production-ready code" },
-  { icon: Briefcase, label: "Professional standards", note: "Git · Code reviews · Sprints" },
-  { icon: Rocket, label: "Confidence ignited", note: "Built. Broke. Learned. Repeated." },
+  { icon: Youtube, label: "A video, a hunch", note: "Found an internship lead on YouTube. Sent a cold email." },
+  { icon: Mail, label: "One-man army", note: "No team. No mentor. Just me, a web app, and a deadline." },
+  { icon: Wrench, label: "Trial. Error. Ship.", note: "Diagnosed every bug with Google. Solved each one with patience." },
+  { icon: Rocket, label: "First Android app, live", note: "Web app → native Android. Built end-to-end. Alone." },
 ];
 
 const Chapter03_FirstStep = () => {

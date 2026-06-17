@@ -4,10 +4,11 @@ import { MapPin } from "lucide-react";
 
 const Chapter01_Origins = () => {
   const lines = [
-    "A student from Gujarat.",
-    "Comfortable speaking Gujarati.",
-    "Curious about technology.",
-    "Still discovering what was possible.",
+    "A student from Gujarat. Curious. Capable. Quiet.",
+    "First real interview — one of India's largest tech companies.",
+    "The questions were fair. The mind went blank.",
+    "Not a lack of knowledge. A lack of language.",
+    "Rejection. And the first honest lesson: skill alone isn't enough.",
   ];
   return (
     <ChapterShell id="ch1" index="01" title="Every Journey Starts Somewhere" subtitle="2019 — Gujarat, India">
@@ -71,10 +72,20 @@ const Chapter01_Origins = () => {
               <span className="text-primary flex items-center gap-1.5">
                 <MapPin className="h-3 w-3" /> 21.1702° N, 72.8311° E
               </span>
-              <span className="text-muted-foreground">SURAT · GUJARAT</span>
+              <span className="text-muted-foreground">INTERVIEW.01 · [silence]</span>
             </div>
             <div className="absolute top-5 left-5 font-mono text-[10px] text-primary/70 tracking-widest">
               ORIGIN.NODE_01
+            </div>
+            <div className="absolute top-5 right-5 font-mono text-[10px] text-accent/80 tracking-widest">
+              SIGNAL · LOST
+            </div>
+            <div className="absolute top-1/2 left-5 -translate-y-1/2 font-mono text-[10px] text-muted-foreground/70 space-y-1">
+              <div>&gt; intro_____________</div>
+              <div className="text-primary/70">&gt; "..."</div>
+              <div>&gt; question_01_______</div>
+              <div className="text-accent/70">&gt; "—"</div>
+              <div>&gt; [end of transcript]</div>
             </div>
           </div>
         </div>
