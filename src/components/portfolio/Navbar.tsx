@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const links = [
@@ -44,7 +45,12 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <Button asChild variant="hero" size="sm" className="ml-2">
+          <Button asChild variant="glass" size="sm" className="ml-2">
+            <Link to="/story">
+              <Sparkles className="mr-1 h-3.5 w-3.5" /> Story Journey
+            </Link>
+          </Button>
+          <Button asChild variant="hero" size="sm">
             <a href="#contact">Hire Me</a>
           </Button>
         </div>
@@ -69,6 +75,13 @@ const Navbar = () => {
                 {l.label}
               </a>
             ))}
+            <Link
+              to="/story"
+              onClick={() => setOpen(false)}
+              className="px-3 py-2 rounded-lg hover:bg-secondary/50 text-sm flex items-center gap-2 text-primary"
+            >
+              <Sparkles className="h-3.5 w-3.5" /> Story Journey
+            </Link>
           </div>
         </div>
       )}
