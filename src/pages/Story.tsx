@@ -23,6 +23,7 @@ import Contact from "@/components/story/Contact";
 import Footer from "@/components/story/Footer";
 
 const Story = () => {
+ 
  const navigate = useNavigate();
 
   const handleBack = () => {
@@ -34,6 +35,19 @@ const Story = () => {
       navigate('/', { replace: true });
     }
   };
+
+ useEffect(() => {
+  // Push a dummy state so the browser thinks there's a history entry
+  window.history.pushState(null, "", window.location.href);
+
+  const handlePopState = () => {
+    // When they click the browser "Back", redirect them to home instead of exiting
+    navigate('/', { replace: true });
+  };
+
+  window.addEventListener('popstate', handlePopState);
+  return () => window.removeEventListener('popstate', handlePopState);
+}, [navigate]);
   
   return (
     <div className="relative min-h-screen bg-background text-foreground overflow-x-hidden">
