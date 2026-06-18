@@ -46,7 +46,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 md:py-28">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="glass-card p-8 md:p-14 max-w-5xl mx-auto relative overflow-hidden">
+        <div className="glass-card p-6 sm:p-10 md:p-14 max-w-5xl mx-auto relative overflow-hidden w-[95vw] md:w-full">
           <div className="absolute inset-0 opacity-60 pointer-events-none" style={{ background: "var(--gradient-hero)" }} />
           <div className="relative">
             <div className="text-center">
@@ -90,6 +90,7 @@ const Contact = () => {
                     <Label htmlFor="contact-name">Name</Label>
                     <Input
                       id="contact-name"
+                      className="w-full"
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
                       maxLength={100}
@@ -101,6 +102,7 @@ const Contact = () => {
                     <Label htmlFor="contact-email">Email</Label>
                     <Input
                       id="contact-email"
+                      className="w-full"
                       type="email"
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -114,6 +116,7 @@ const Contact = () => {
                   <Label htmlFor="contact-message">Message</Label>
                   <Textarea
                     id="contact-message"
+                    className="w-full"
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
                     maxLength={2000}
