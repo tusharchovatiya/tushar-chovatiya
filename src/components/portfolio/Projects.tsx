@@ -19,7 +19,7 @@ const projects: Project[] = [
       "Published Flutter package that delivers a complete OCR area-detection solution — letting developers drop area-based text recognition into any Flutter app.",
     highlights: ["Published on pub.dev", "Plug-and-play OCR", "Cross-platform"],
     tech: ["Flutter", "Dart", "OCR", "ML Kit"],
-    link: { href: "https://pub.dev/packages/flutter_text_detect_area", label: "View on pub.dev", icon: "package" },
+    link: { href: "https://pub.dev/packages/flutter_text_detect_area", label: "View on pub.dev", icon: "external" },
   },
   {
     title: "Monportail",
@@ -29,7 +29,7 @@ const projects: Project[] = [
       "NFC-based student identity app for an education provider. Built shared NFC chip/sticker tag read/write byte-level logic in KMP, consumed from both Android & iOS.",
     highlights: ["Shared KMP business logic", "NFC read/write byte data", "Cross-platform identity"],
     tech: ["Kotlin Multiplatform", "NFC", "Compose"],
-    link: { href: "https://github.com/Eugeniuses/monportail", label: "GitHub", icon: "github" },
+    link: { href: "https://github.com/Eugeniuses/monportail", label: "GitHub", icon: "external" },
   },
   {
     title: "Elna",
@@ -39,7 +39,7 @@ const projects: Project[] = [
       "KMP product driven by a shared app-config pipeline — Kotlin serialization plus ComposeResource keeps Android and iOS in lockstep from one source of truth.",
     highlights: ["Config-driven architecture", "Mirego Trikot stack", "Shared Compose resources"],
     tech: ["KMP", "Kotlin", "Compose"],
-    link: { href: "https://github.com/Eugeniuses/elna", label: "GitHub", icon: "github" },
+    link: { href: "https://github.com/Eugeniuses/elna", label: "GitHub", icon: "external" },
   },
   {
     title: "Elog Kayaking",
@@ -124,7 +124,7 @@ const projects: Project[] = [
     desc:
       "Role-based notifications via Firebase Functions, custom widgets for PDF kiosk dynamic-link interactions, and SQLite local-state custom actions for instant UI refresh.",
     tech: ["FlutterFlow", "Firebase Functions", "SQLite"],
-    link: { href: "https://github.com/Eugeniuses/rona_connexia_firebase_function", label: "GitHub", icon: "github" },
+    link: { href: "", label: "GitHub", icon: "github" },
   },
   {
     title: "Weatcb",
@@ -133,7 +133,7 @@ const projects: Project[] = [
     desc:
       "Productivity app for employees of W.E. Aubuchon Co., compatible with Janam and Koamtac scanner devices. Native webview wrapper bound to a React web build.",
     tech: ["Android", "Kotlin", "WebView"],
-    link: { href: "https://github.com/Eugeniuses/weatcb-android", label: "GitHub", icon: "github" },
+    link: { href: "", label: "GitHub", icon: "github" },
   },
   {
     title: "Ozone Orgill",
@@ -142,7 +142,7 @@ const projects: Project[] = [
     desc:
       "Portable native apps wrapping an Angular web build into a webview server, shipping a single web codebase across Android and iOS.",
     tech: ["Android", "iOS", "Angular"],
-    link: { href: "https://github.com/Eugeniuses/ozone-android", label: "GitHub", icon: "github" },
+    link: { href: "", label: "GitHub", icon: "github" },
   },
   {
     title: "Voila Cabs (Rider + Partner)",
