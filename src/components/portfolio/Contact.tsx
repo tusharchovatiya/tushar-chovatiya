@@ -10,7 +10,7 @@ import { supabase } from "@/integrations/supabase/client";
 
 const channels = [
   { icon: Mail, label: "Email", value: "tusharchovatiyatc31@gmail.com", href: "mailto:tusharchovatiyatc31@gmail.com" },
-  { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/tusharchovatiya", href: "https://www.linkedin.com/in/tusharchovatiya" },
+  { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/tushar-chovatiya-53169b143", href: "https://www.linkedin.com/in/tushar-chovatiya-53169b143" },
   { icon: Github, label: "GitHub", value: "github.com/tusharchovatiya", href: "https://github.com/tusharchovatiya" },
 ];
 
