@@ -29,7 +29,7 @@ const projects: Project[] = [
       "NFC-based student identity app for an education provider. Built shared NFC chip/sticker tag read/write byte-level logic in KMP, consumed from both Android & iOS.",
     highlights: ["Shared KMP business logic", "NFC read/write byte data", "Cross-platform identity"],
     tech: ["Kotlin Multiplatform", "NFC", "Compose"],
-    link: { href: "https://github.com/Eugeniuses/monportail", label: "GitHub", icon: "external" },
+    link: { href: "https://play.google.com/store/apps/details?id=ca.ulaval.monportail", label: "Play Store", icon: "external" },
   },
   {
     title: "Elna",
@@ -39,7 +39,6 @@ const projects: Project[] = [
       "KMP product driven by a shared app-config pipeline — Kotlin serialization plus ComposeResource keeps Android and iOS in lockstep from one source of truth.",
     highlights: ["Config-driven architecture", "Mirego Trikot stack", "Shared Compose resources"],
     tech: ["KMP", "Kotlin", "Compose"],
-    link: { href: "https://github.com/Eugeniuses/elna", label: "GitHub", icon: "external" },
   },
   {
     title: "Elog Kayaking",
@@ -48,7 +47,7 @@ const projects: Project[] = [
     desc:
       "The ultimate paddling app for outdoor enthusiasts — realtime tracking, route logging and a social activity feed for the kayaking community.",
     tech: ["Flutter", "Maps", "Firebase"],
-    link: { href: "https://play.google.com/store/search?q=elog%20kayaking&c=apps", label: "Play Store", icon: "external" },
+    // link: { href: "https://play.google.com/store/search?q=elog%20kayaking&c=apps", label: "Play Store", icon: "external" },
   },
   {
     title: "Edition Nordiques",
@@ -57,7 +56,7 @@ const projects: Project[] = [
     desc:
       "Regional e-news platform aggregating multiple Eastern Quebec news channels into one premium reading experience.",
     tech: ["Flutter", "REST", "CMS"],
-    link: { href: "https://play.google.com/store/search?q=edition%20nordiques&c=apps", label: "Play Store", icon: "external" },
+    link: { href: "https://apps.apple.com/in/app/éditions-nordiques/id6472655591", label: "App Store", icon: "external" },
   },
   {
     title: "Neobox",
@@ -66,7 +65,7 @@ const projects: Project[] = [
     desc:
       "Multi-store ecommerce platform allowing users to discover and order across all supported stores from a single unified shopping experience.",
     tech: ["Flutter", "Payments", "Firebase"],
-    link: { href: "https://play.google.com/store/search?q=neobox&c=apps", label: "Play Store", icon: "external" },
+    // link: { href: "https://play.google.com/store/search?q=neobox&c=apps", label: "Play Store", icon: "external" },
   },
   {
     title: "SnapShop",
@@ -75,7 +74,7 @@ const projects: Project[] = [
     desc:
       "Snap-and-shop experience that scans bill receipts and lets merchants sell products through receipt scanning — combining OCR with retail flows.",
     tech: ["Flutter", "OCR", "REST"],
-    link: { href: "https://play.google.com/store/search?q=snapshop&c=apps", label: "Play Store", icon: "external" },
+    // link: { href: "https://play.google.com/store/search?q=snapshop&c=apps", label: "Play Store", icon: "external" },
   },
   {
     title: "CIAS",
@@ -84,6 +83,7 @@ const projects: Project[] = [
     desc:
       "Integrated multi-currency price listing with PayPal payments end-to-end, including admin-driven client config, dev/staging/prod environment switching and sandbox testing.",
     tech: ["Flutter", "PayPal", "Multi-currency"],
+    link: { href: "https://play.google.com/store/apps/details?id=com.main.cias.app", label: "Play Store", icon: "external" },
   },
   {
     title: "Equa",
@@ -92,6 +92,7 @@ const projects: Project[] = [
     desc:
       "Modernized the app across Flutter & Android stack — Play Console 16KB page support, Edge-to-Edge SDK 35, Riverpod state-management refactors and go_router redirection fixes.",
     tech: ["Flutter", "Riverpod", "go_router"],
+    link: { href: "https://play.google.com/store/apps/details?id=odu.app.equa", label: "Play Store", icon: "external" },
   },
   {
     title: "NFS",
@@ -108,6 +109,7 @@ const projects: Project[] = [
     desc:
       "Integrated the BytePlusEffect AR SDK on Android & iOS — wiring up ComposeMakeup, FilterResource, LicenseBag and ModelResource bundles end-to-end.",
     tech: ["Flutter", "BytePlus SDK", "AR"],
+    link: { href: "https://play.google.com/store/apps/details?id=com.getbeautyai.app.android", label: "Play Store", icon: "external" },
   },
   {
     title: "Agence RBL",
@@ -116,6 +118,7 @@ const projects: Project[] = [
     desc:
       "Built a custom Android plugin extension over manage_calendar_events with native-side method overrides to handle bespoke calendar event flows.",
     tech: ["Flutter", "Android Plugin", "Java"],
+    link: { href: "https://apps.apple.com/in/app/magestion-art/id1589442923", label: "App Store", icon: "external" },
   },
   {
     title: "Ronna Momentum & Connexia",
@@ -124,7 +127,7 @@ const projects: Project[] = [
     desc:
       "Role-based notifications via Firebase Functions, custom widgets for PDF kiosk dynamic-link interactions, and SQLite local-state custom actions for instant UI refresh.",
     tech: ["FlutterFlow", "Firebase Functions", "SQLite"],
-    link: { href: "", label: "GitHub", icon: "github" },
+    link: { href: "https://play.google.com/store/apps/details?id=rona.connexia.staging.com", label: "Play Store", icon: "external" },
   },
   {
     title: "Weatcb",
@@ -133,7 +136,7 @@ const projects: Project[] = [
     desc:
       "Productivity app for employees of W.E. Aubuchon Co., compatible with Janam and Koamtac scanner devices. Native webview wrapper bound to a React web build.",
     tech: ["Android", "Kotlin", "WebView"],
-    link: { href: "", label: "GitHub", icon: "github" },
+    // link: { href: "", label: "GitHub", icon: "github" },
   },
   {
     title: "Ozone Orgill",
@@ -142,7 +145,7 @@ const projects: Project[] = [
     desc:
       "Portable native apps wrapping an Angular web build into a webview server, shipping a single web codebase across Android and iOS.",
     tech: ["Android", "iOS", "Angular"],
-    link: { href: "", label: "GitHub", icon: "github" },
+    link: { href: "https://play.google.com/store/apps/details?id=com.orgill.ionic", label: "Play Store", icon: "external" },
   },
   {
     title: "Voila Cabs (Rider + Partner)",
@@ -151,6 +154,7 @@ const projects: Project[] = [
     desc:
       "Full ride-hailing stack — rider app with realtime in-app Google Maps tracking, plus driver partner app with in-app wallet, document upload and slide-to-action trip flow.",
     tech: ["Android", "Google Maps", "Firebase"],
+    link: { href: "https://play.google.com/store/apps/details?id=com.voilacabs.rider", label: "Play Store", icon: "external" },
   },
 ];
 
