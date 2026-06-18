@@ -23,24 +23,16 @@ import Contact from "@/components/story/Contact";
 import Footer from "@/components/story/Footer";
 
 const Story = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  useEffect(() => {
-    // This pushes an extra state so the browser history stack is > 1
-    window.history.pushState(null, "", window.location.href);
-    
-    const handlePopState = () => {
-      // When user presses browser back, force them to Home instead of exiting
-      navigate('/', { replace: true });
-    };
-
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
-  }, [navigate]);
+ const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate('/');
+    // Navigate back one step in the React Router history stack
+    if (window.history.length > 1) {
+      navigate(-1);
+    } else {
+      // If no history, send to home
+      navigate('/', { replace: true });
+    }
   };
   
   return (
