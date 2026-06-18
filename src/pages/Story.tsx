@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import { ArrowLeft } from "lucide-react";
 import StarfieldBackground from "@/components/story/StarfieldBackground";
 import ChapterNav from "@/components/story/ChapterNav";
@@ -23,16 +24,25 @@ import Footer from "@/components/story/Footer";
 
 const Story = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    // This pushes an extra state so the browser history stack is > 1
+    window.history.pushState(null, "", window.location.href);
+    
+    const handlePopState = () => {
+      // When user presses browser back, force them to Home instead of exiting
+      navigate('/', { replace: true });
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [navigate]);
 
   const handleBack = () => {
-    // Check if we have history within the app
-    if (window.history.state && window.history.state.idx > 0) {
-      navigate(-1);
-    } else {
-      // If we are at the "start" of the history, force navigation home
-      navigate('/', { replace: true });
-    }
+    navigate('/');
   };
+  
   return (
     <div className="relative min-h-screen bg-background text-foreground overflow-x-hidden">
       <StarfieldBackground />
