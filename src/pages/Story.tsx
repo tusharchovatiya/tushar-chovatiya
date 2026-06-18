@@ -97,7 +97,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 md:py-28">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="glass-card p-4 sm:p-6 md:p-10 lg:p-14 max-w-5xl mx-auto relative overflow-hidden w-full">
+        <div className="glass-card p-4 sm:p-6 md:p-10 lg:p-14 w-[95vw] sm:w-full max-w-5xl mx-auto relative overflow-hidden">
           <div
             className="absolute inset-0 opacity-60 pointer-events-none"
             style={{
@@ -130,7 +130,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 mt-10">
               {/* Contact Cards */}
               <div className="space-y-3">
                 {channels.map(
@@ -148,7 +148,7 @@ const Contact = () => {
                           ? "noopener noreferrer"
                           : undefined
                       }
-                      className="glass p-4 rounded-2xl flex items-center gap-4 hover:border-primary/40 transition-all"
+                      className="glass p-4 rounded-2xl flex items-center gap-4 hover:border-primary/40 transition-all w-full"
                     >
                       <div className="h-10 w-10 rounded-xl gradient-primary grid place-items-center shrink-0">
                         <Icon className="h-5 w-5 text-primary-foreground" />
