@@ -9,7 +9,7 @@ const Chapter07_Techvoot = () => {
       id="ch7"
       index="07"
       title="Scaling Up"
-      subtitle="Techvoot Solutions · Work From Home · Ahmedabad · 4 years and counting."
+      subtitle="Techvoot Solutions · Work From Home · Ahmedabad · · 2021 - 2025."
     >
       <div className="grid md:grid-cols-2 gap-12 items-center">
         {/* Futuristic city skyline */}
