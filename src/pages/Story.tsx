@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import { ArrowLeft } from "lucide-react";
 import StarfieldBackground from "@/components/story/StarfieldBackground";
 import ChapterNav from "@/components/story/ChapterNav";
@@ -21,17 +22,34 @@ import Contact from "@/components/story/Contact";
 import Footer from "@/components/story/Footer";
 
 const Story = () => {
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    // Check if we have history within the app
+    if (window.history.state && window.history.state.idx > 0) {
+      navigate(-1);
+    } else {
+      // If we are at the "start" of the history, force navigation home
+      navigate('/', { replace: true });
+    }
+  };
   return (
     <div className="relative min-h-screen bg-background text-foreground overflow-x-hidden">
       <StarfieldBackground />
       <ChapterNav />
-      <Link
+      {/* <Link
         to="/"
         className="fixed top-6 left-6 z-50 glass-card px-4 py-2 rounded-full text-sm flex items-center gap-2 hover:text-primary transition-colors"
       >
         <ArrowLeft className="h-4 w-4" />
         Back to Portfolio
-      </Link>
+      </Link> */}
+      <button 
+  onClick={handleBack} 
+  className="fixed top-6 left-6 z-50 glass-card px-4 py-2 rounded-full text-sm flex items-center gap-2 hover:text-primary transition-colors"
+>
+  <ArrowLeft className="h-4 w-4" /> Back to Portfolio
+</button>
       <main>
         <HeroIntro />
         <Chapter01_Origins />
