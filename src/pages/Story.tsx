@@ -25,16 +25,13 @@ import Footer from "@/components/story/Footer";
 const Story = () => {
  
  const navigate = useNavigate();
-// This is the ONLY legitimate way to warn a user before they exit
-useEffect(() => {
-  window.onbeforeunload = () => true;
-  return () => { window.onbeforeunload = null; };
-}, []);
-  const handleBack = () => {
-    // Navigate back one step in the React Router history stack
-      navigate('/', { replace: true });
-    }
-  };
+ const handleBack = () => {
+   if (window.history.state?.idx > 0) {
+     navigate(-1);
+   } else {
+     navigate("/", { replace: true });
+   }
+ };
   
   return (
     <div className="relative min-h-screen bg-background text-foreground overflow-x-hidden">
