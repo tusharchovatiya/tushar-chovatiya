@@ -25,29 +25,16 @@ import Footer from "@/components/story/Footer";
 const Story = () => {
  
  const navigate = useNavigate();
-
+// This is the ONLY legitimate way to warn a user before they exit
+useEffect(() => {
+  window.onbeforeunload = () => true;
+  return () => { window.onbeforeunload = null; };
+}, []);
   const handleBack = () => {
     // Navigate back one step in the React Router history stack
-    if (window.history.length > 1) {
-      navigate(-1);
-    } else {
-      // If no history, send to home
       navigate('/', { replace: true });
     }
   };
-
- useEffect(() => {
-  // Push a dummy state so the browser thinks there's a history entry
-  window.history.pushState(null, "", window.location.href);
-
-  const handlePopState = () => {
-    // When they click the browser "Back", redirect them to home instead of exiting
-    navigate('/', { replace: true });
-  };
-
-  window.addEventListener('popstate', handlePopState);
-  return () => window.removeEventListener('popstate', handlePopState);
-}, [navigate]);
   
   return (
     <div className="relative min-h-screen bg-background text-foreground overflow-x-hidden">
