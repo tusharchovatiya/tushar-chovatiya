@@ -25,13 +25,15 @@ const Chapter06_Communication = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: i * 0.25 }}
-            className="glass-card p-6 md:p-8 flex items-center justify-between gap-4"
+            className="glass-card p-4 sm:p-6 md:p-8 flex items-center justify-between gap-2 sm:gap-4 overflow-hidden"
           >
-            <span className="text-2xl md:text-4xl font-light text-muted-foreground line-through decoration-destructive/40">
-              {t.from}
+            <span className="text-xl sm:text-2xl md:text-4xl font-light text-muted-foreground line-through decoration-destructive/40 min-w-0 truncate">
+            {t.from}
             </span>
             <ArrowRight className="h-6 w-6 md:h-8 md:w-8 text-primary shrink-0 animate-pulse" />
-            <span className="text-2xl md:text-4xl font-bold holo-text">{t.to}</span>
+            <span className="text-xl sm:text-2xl md:text-4xl font-bold holo-text min-w-0 truncate">
+              {t.to}
+            </span>
           </motion.div>
         ))}
         <motion.p
