@@ -1,65 +1,36 @@
-# 👋 Welcome
+# Welcome
 
-I'm Tushar Chovatiya, a Mobile Application Developer with 5.5+ years of experience building Android and Flutter applications.
+Hi, I'm Tushar Chovatiya.
 
-This space is where I share projects, experiments, ideas, and lessons learned while exploring modern software development.
+I have 5.5+ years of experience in Android and Flutter application development.
 
-## 🚀 Topics We Discuss
+This discussion space is for sharing knowledge, discussing technology, learning new tools, and exchanging ideas.
 
-### 📱 Mobile Development
+## Topics
+
+### Mobile Development
 - Flutter
 - Android
 - Firebase
-- App Architecture
-- Mobile UI/UX
+- Mobile Architecture
 
-### 🤖 AI-Assisted Development
+### Technology Exploration
+- AI Development Tools
 - Vibe Coding
-- Lovable
-- Replit
-- Cursor
-- Claude
-- Gemini
-- ChatGPT
+- Automation
+- New Technologies
 
-### 🛠 Product Building
-- MVP Development
-- SaaS Ideas
-- Startup Experiments
+### Creative Projects
+- AI Video Experiments
+- Content Creation
 - Side Projects
 
-### ⚡ Automation
-- n8n
-- Workflows
-- Integrations
-- Productivity Systems
-
-### 🎨 Creative Technology
-- AI Video Creation
-- AI Music
-- Content Production
-- Interactive Experiences
-
----
-
-## 💬 Feel Free To
+## Feel Free To
 
 - Ask questions
 - Share ideas
+- Discuss technologies
 - Showcase projects
-- Report issues
-- Suggest improvements
-- Connect with other builders
+- Provide feedback
 
----
-
-## Current Interests
-
-- Mobile App Development
-- AI-Assisted Software Development
-- Product Design
-- Workflow Automation
-- EmbroMockAI
-- Creative AI Experiments
-
-Thanks for visiting and contributing.
+Thank you for visiting my GitHub profile.
