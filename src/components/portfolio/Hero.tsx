@@ -20,7 +20,7 @@ const Hero = () => {
           <div className="space-y-7 animate-fade-up">
             <div className="inline-flex items-center gap-2 glass px-4 py-1.5 rounded-full text-xs md:text-sm">
               <Sparkles className="h-3.5 w-3.5 text-primary-glow" />
-              <span className="text-muted-foreground">Available for Senior Engineering Roles</span>
+              <span className="text-muted-foreground">Available for Mobile Engineering Roles</span>
             </div>
 
             <div className="space-y-4">
